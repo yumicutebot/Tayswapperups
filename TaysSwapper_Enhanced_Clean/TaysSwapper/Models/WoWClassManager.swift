@@ -88,6 +88,11 @@ enum WoWClass: String, CaseIterable, Codable {
             return Image(systemName: fallbackIcon)
         }
     }
+    
+    var officialIcon: Image {
+        // Same as icon property - alias for consistency
+        return icon
+    }
 }
 
 class ProfileManager: ObservableObject {

@@ -27,8 +27,5 @@ struct TaysSwapperApp: App {
                 .keyboardShortcut("u", modifiers: [.command, .shift])
             }
         }
-        .onAppear {
-            updateService.scheduleAutomaticChecks()
-        }
     }
 }

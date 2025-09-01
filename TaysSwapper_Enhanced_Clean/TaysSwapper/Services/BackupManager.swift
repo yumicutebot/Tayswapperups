@@ -34,7 +34,7 @@ class BackupManager: ObservableObject {
         ]
         
         for className in classNames {
-            let classPath = backupPath.appending("/\\(className)")
+            let classPath = backupPath.appending("/\(className)")
             try? fileManager.createDirectory(atPath: classPath, withIntermediateDirectories: true, attributes: nil)
         }
     }
@@ -45,13 +45,13 @@ class BackupManager: ObservableObject {
         dateFormatter.dateFormat = "yyyy-MM-dd-HH-mm-ss"
         let dateString = dateFormatter.string(from: Date())
         
-        let backupName = "\\(characterName)-\\(dateString)"
-        let classBackupPath = backupPath.appending("/\\(profile.characterClass.rawValue)/\\(backupName)")
+        let backupName = "\(characterName)-\(dateString)"
+        let classBackupPath = backupPath.appending("/\(profile.characterClass.rawValue)/\(backupName)")
         
         do {
             // Check if WTF folder exists
             guard fileManager.fileExists(atPath: wtfSourcePath) else {
-                print("WTF folder not found at: \\(wtfSourcePath)")
+                print("WTF folder not found at: \(wtfSourcePath)")
                 return false
             }
             
@@ -61,16 +61,16 @@ class BackupManager: ObservableObject {
             // Copy WTF folder contents
             let wtfContents = try fileManager.contentsOfDirectory(atPath: wtfSourcePath)
             for item in wtfContents {
-                let sourcePath = wtfSourcePath.appending("/\\(item)")
-                let destinationPath = classBackupPath.appending("/\\(item)")
+                let sourcePath = wtfSourcePath.appending("/\(item)")
+                let destinationPath = classBackupPath.appending("/\(item)")
                 try fileManager.copyItem(atPath: sourcePath, toPath: destinationPath)
             }
             
-            print("✅ Backup created: \\(backupName)")
+            print("✅ Backup created: \(backupName)")
             return true
             
         } catch {
-            print("❌ Backup failed: \\(error.localizedDescription)")
+            print("❌ Backup failed: \(error.localizedDescription)")
             return false
         }
     }
@@ -90,27 +90,27 @@ class BackupManager: ObservableObject {
             // Copy backup contents to WTF folder
             let backupContents = try fileManager.contentsOfDirectory(atPath: backupPath)
             for item in backupContents {
-                let sourcePath = backupPath.appending("/\\(item)")
-                let destinationPath = wtfDestinationPath.appending("/\\(item)")
+                let sourcePath = backupPath.appending("/\(item)")
+                let destinationPath = wtfDestinationPath.appending("/\(item)")
                 try fileManager.copyItem(atPath: sourcePath, toPath: destinationPath)
             }
             
-            print("✅ Backup restored from: \\(backupPath)")
+            print("✅ Backup restored from: \(backupPath)")
             return true
             
         } catch {
-            print("❌ Restore failed: \\(error.localizedDescription)")
+            print("❌ Restore failed: \(error.localizedDescription)")
             return false
         }
     }
     
     func getBackupsForClass(_ className: String) -> [BackupInfo] {
-        let classPath = backupPath.appending("/\\(className)")
+        let classPath = backupPath.appending("/\(className)")
         
         do {
             let backupFolders = try fileManager.contentsOfDirectory(atPath: classPath)
             return backupFolders.compactMap { folder in
-                let fullPath = classPath.appending("/\\(folder)")
+                let fullPath = classPath.appending("/\(folder)")
                 let attributes = try? fileManager.attributesOfItem(atPath: fullPath)
                 let creationDate = attributes?[.creationDate] as? Date ?? Date()
                 
@@ -127,7 +127,7 @@ class BackupManager: ObservableObject {
                 )
             }.sorted { $0.creationDate > $1.creationDate }
         } catch {
-            print("❌ Failed to read backups for \\(className): \\(error.localizedDescription)")
+            print("❌ Failed to read backups for \(className): \(error.localizedDescription)")
             return []
         }
     }
@@ -135,10 +135,10 @@ class BackupManager: ObservableObject {
     func deleteBackup(_ backup: BackupInfo) -> Bool {
         do {
             try fileManager.removeItem(atPath: backup.fullPath)
-            print("✅ Deleted backup: \\(backup.folderName)")
+            print("✅ Deleted backup: \(backup.folderName)")
             return true
         } catch {
-            print("❌ Failed to delete backup: \\(error.localizedDescription)")
+            print("❌ Failed to delete backup: \(error.localizedDescription)")
             return false
         }
     }
