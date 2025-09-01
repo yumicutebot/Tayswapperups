@@ -1,0 +1,12 @@
+version: "Apple Swift version 6.1.2 (swiftlang-6.1.2.1.2 clang-1700.0.13.5)"
+options: "c14f380fc9eb5498c72b06ea9bf4526516a69029c35cb6b567003c05c18631b3"
+build_start_time: [1756686793, 387813000]
+build_end_time: [1756686796, 611338000]
+inputs:
+  "/Users/mattywow/Downloads/TaysSwapper_Enhanced_Clean/TaysSwapper/Models/WoWClassManager.swift": !dirty [1756686771, 296589295]
+  "/Users/mattywow/Downloads/TaysSwapper_Enhanced_Clean/TaysSwapper/Services/BackupManager.swift": !dirty [1756667394, 0]
+  "/Users/mattywow/Downloads/TaysSwapper_Enhanced_Clean/TaysSwapper/Services/UpdateService.swift": !dirty [1756667374, 0]
+  "/Users/mattywow/Downloads/TaysSwapper_Enhanced_Clean/TaysSwapper/TaysSwapperApp.swift": !dirty [1756667264, 0]
+  "/Users/mattywow/Downloads/TaysSwapper_Enhanced_Clean/TaysSwapper/Views/ContentView.swift": !dirty [1756667296, 0]
+  ? "/Users/mattywow/Downloads/TaysSwapper_Enhanced_Clean/build/Build/Intermediates.noindex/TaysSwapper.build/Release/TaysSwapper.build/DerivedSources/GeneratedAssetSymbols.swift"
+  : !dirty [1756686792, 329289376]

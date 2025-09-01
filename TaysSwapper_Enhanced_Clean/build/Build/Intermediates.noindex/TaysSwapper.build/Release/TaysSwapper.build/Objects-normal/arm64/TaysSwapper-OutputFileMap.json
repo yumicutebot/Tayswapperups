@@ -1,0 +1,40 @@
+{
+  "" : {
+    "const-values" : "/Users/mattywow/Downloads/TaysSwapper_Enhanced_Clean/build/Build/Intermediates.noindex/TaysSwapper.build/Release/TaysSwapper.build/Objects-normal/arm64/TaysSwapper-master.swiftconstvalues",
+    "dependencies" : "/Users/mattywow/Downloads/TaysSwapper_Enhanced_Clean/build/Build/Intermediates.noindex/TaysSwapper.build/Release/TaysSwapper.build/Objects-normal/arm64/TaysSwapper-master.d",
+    "diagnostics" : "/Users/mattywow/Downloads/TaysSwapper_Enhanced_Clean/build/Build/Intermediates.noindex/TaysSwapper.build/Release/TaysSwapper.build/Objects-normal/arm64/TaysSwapper-master.dia",
+    "emit-module-dependencies" : "/Users/mattywow/Downloads/TaysSwapper_Enhanced_Clean/build/Build/Intermediates.noindex/TaysSwapper.build/Release/TaysSwapper.build/Objects-normal/arm64/TaysSwapper-master-emit-module.d",
+    "emit-module-diagnostics" : "/Users/mattywow/Downloads/TaysSwapper_Enhanced_Clean/build/Build/Intermediates.noindex/TaysSwapper.build/Release/TaysSwapper.build/Objects-normal/arm64/TaysSwapper-master-emit-module.dia",
+    "swift-dependencies" : "/Users/mattywow/Downloads/TaysSwapper_Enhanced_Clean/build/Build/Intermediates.noindex/TaysSwapper.build/Release/TaysSwapper.build/Objects-normal/arm64/TaysSwapper-master.swiftdeps"
+  },
+  "/Users/mattywow/Downloads/TaysSwapper_Enhanced_Clean/TaysSwapper/Models/WoWClassManager.swift" : {
+    "index-unit-output-path" : "/TaysSwapper.build/Release/TaysSwapper.build/Objects-normal/arm64/WoWClassManager.o",
+    "llvm-bc" : "/Users/mattywow/Downloads/TaysSwapper_Enhanced_Clean/build/Build/Intermediates.noindex/TaysSwapper.build/Release/TaysSwapper.build/Objects-normal/arm64/WoWClassManager.bc",
+    "object" : "/Users/mattywow/Downloads/TaysSwapper_Enhanced_Clean/build/Build/Intermediates.noindex/TaysSwapper.build/Release/TaysSwapper.build/Objects-normal/arm64/WoWClassManager.o"
+  },
+  "/Users/mattywow/Downloads/TaysSwapper_Enhanced_Clean/TaysSwapper/Services/BackupManager.swift" : {
+    "index-unit-output-path" : "/TaysSwapper.build/Release/TaysSwapper.build/Objects-normal/arm64/BackupManager.o",
+    "llvm-bc" : "/Users/mattywow/Downloads/TaysSwapper_Enhanced_Clean/build/Build/Intermediates.noindex/TaysSwapper.build/Release/TaysSwapper.build/Objects-normal/arm64/BackupManager.bc",
+    "object" : "/Users/mattywow/Downloads/TaysSwapper_Enhanced_Clean/build/Build/Intermediates.noindex/TaysSwapper.build/Release/TaysSwapper.build/Objects-normal/arm64/BackupManager.o"
+  },
+  "/Users/mattywow/Downloads/TaysSwapper_Enhanced_Clean/TaysSwapper/Services/UpdateService.swift" : {
+    "index-unit-output-path" : "/TaysSwapper.build/Release/TaysSwapper.build/Objects-normal/arm64/UpdateService.o",
+    "llvm-bc" : "/Users/mattywow/Downloads/TaysSwapper_Enhanced_Clean/build/Build/Intermediates.noindex/TaysSwapper.build/Release/TaysSwapper.build/Objects-normal/arm64/UpdateService.bc",
+    "object" : "/Users/mattywow/Downloads/TaysSwapper_Enhanced_Clean/build/Build/Intermediates.noindex/TaysSwapper.build/Release/TaysSwapper.build/Objects-normal/arm64/UpdateService.o"
+  },
+  "/Users/mattywow/Downloads/TaysSwapper_Enhanced_Clean/TaysSwapper/TaysSwapperApp.swift" : {
+    "index-unit-output-path" : "/TaysSwapper.build/Release/TaysSwapper.build/Objects-normal/arm64/TaysSwapperApp.o",
+    "llvm-bc" : "/Users/mattywow/Downloads/TaysSwapper_Enhanced_Clean/build/Build/Intermediates.noindex/TaysSwapper.build/Release/TaysSwapper.build/Objects-normal/arm64/TaysSwapperApp.bc",
+    "object" : "/Users/mattywow/Downloads/TaysSwapper_Enhanced_Clean/build/Build/Intermediates.noindex/TaysSwapper.build/Release/TaysSwapper.build/Objects-normal/arm64/TaysSwapperApp.o"
+  },
+  "/Users/mattywow/Downloads/TaysSwapper_Enhanced_Clean/TaysSwapper/Views/ContentView.swift" : {
+    "index-unit-output-path" : "/TaysSwapper.build/Release/TaysSwapper.build/Objects-normal/arm64/ContentView.o",
+    "llvm-bc" : "/Users/mattywow/Downloads/TaysSwapper_Enhanced_Clean/build/Build/Intermediates.noindex/TaysSwapper.build/Release/TaysSwapper.build/Objects-normal/arm64/ContentView.bc",
+    "object" : "/Users/mattywow/Downloads/TaysSwapper_Enhanced_Clean/build/Build/Intermediates.noindex/TaysSwapper.build/Release/TaysSwapper.build/Objects-normal/arm64/ContentView.o"
+  },
+  "/Users/mattywow/Downloads/TaysSwapper_Enhanced_Clean/build/Build/Intermediates.noindex/TaysSwapper.build/Release/TaysSwapper.build/DerivedSources/GeneratedAssetSymbols.swift" : {
+    "index-unit-output-path" : "/TaysSwapper.build/Release/TaysSwapper.build/Objects-normal/arm64/GeneratedAssetSymbols.o",
+    "llvm-bc" : "/Users/mattywow/Downloads/TaysSwapper_Enhanced_Clean/build/Build/Intermediates.noindex/TaysSwapper.build/Release/TaysSwapper.build/Objects-normal/arm64/GeneratedAssetSymbols.bc",
+    "object" : "/Users/mattywow/Downloads/TaysSwapper_Enhanced_Clean/build/Build/Intermediates.noindex/TaysSwapper.build/Release/TaysSwapper.build/Objects-normal/arm64/GeneratedAssetSymbols.o"
+  }
+}
